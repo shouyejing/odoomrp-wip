@@ -1,4 +1,3 @@
-
 # -*- encoding: utf-8 -*-
 ##############################################################################
 #
@@ -24,14 +23,20 @@
     "name": "Warning Log",
     "version": "1.0",
     "depends": ["base", "warning"],
-    "author": "OdooMRP team",
+    "author": "OdooMRP team,"
+              "AvanzOSC,"
+              "Serv. Tecnol. Avanzados - Pedro M. Baeza",
+    "website": "http://www.odoomrp.com",
     "contributors": ["Mikel Arregi <mikelarregi@avanzosc.es>"],
-    "category": "category",
+    "category": "Tools",
     "description": """
-    This module provide :
+This module provide :
     New menu entry with log of warnigs raised by "warning" module
     """,
-    'data': [],
+    'data': [
+        "views/warning_log_view.xml",
+        "security/ir.model.access.csv",
+    ],
     "installable": True,
     "auto_install": False,
 }
